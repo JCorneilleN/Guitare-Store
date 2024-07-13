@@ -1,0 +1,95 @@
+body {
+    font-family: sans-serif;
+    max-width: 1200px;  /*Format of the page */
+    background-color: white; /*Background color */
+    background-image: url("../images/guitarWallPaper.jpg");
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: 10px 10px 5px lightcoral, -10px 10px 5px lightcoral; /* Shadow on right and left */
+    margin:  0 auto;
+    padding: 0;
+
+}
+
+main section{
+    width: 980px;
+}
+.CustomerInformation{
+    border-style: solid;
+    width:100%;
+    margin-bottom: 5px;
+}
+.BillingAddress{
+    border-style: solid;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    margin-left: 0px;
+
+}
+.ShippingAddress{
+    border-style: solid;
+    width: 50%;
+    box-sizing: border-box;
+    float:right;
+    margin-right: -6px;
+
+
+}
+.longer-input {
+    width: 250px; 
+    
+    margin-right: 10px; /* Space between inputs */
+}
+input[name="confirmation"] {
+    border: none; 
+
+    margin-left: 200px;
+    color: red;
+}
+
+main section h2{
+    margin-left: 6px;
+    margin-top:6px;
+}
+
+button{
+    margin-left: 50px;
+    margin-bottom: 13px;
+}
+
+
+.form-row {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Space between rows */
+    margin-left: 6px;
+}
+
+.form-row label {
+    flex: 0 0 150px; 
+    margin-right: 10px; /* Space between label and input */
+}
+
+
+.confirmation {
+    flex: 1; 
+}
+
+input[name="confirmation_address"] {
+    border: none; 
+
+    margin-left: -150px;
+    color: red;
+}
+
+.longer{
+    border: none;
+}
+
+.toggle-password-icon {
+    margin-left: -30px;
+    cursor: pointer;
+    opacity: 0.1; 
+}

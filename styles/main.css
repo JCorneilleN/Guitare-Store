@@ -1,0 +1,281 @@
+
+body {
+    font-family: sans-serif;
+    max-width: 800px;  /*Format of the page */
+    background-color: white; /*Background color */
+    background-image: url("../images/guitarWallPaper.jpg");
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: 10px 10px 5px lightcoral, -10px 10px 5px lightcoral; /* Shadow on right and left */
+    margin:  0 auto;
+    padding: 0;
+
+}
+
+
+/* Header styles */
+
+header{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+
+    background-image: linear-gradient(45deg, white, salmon 75%, black);
+    padding: 10px;
+    clear:both;
+}
+header::after{
+    content: "";
+    clear:both;
+    display:block;
+}
+
+.customerIcon{
+    float: right;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+ #dropdownMenu {
+    display: none;
+    position:static;
+    left: 0;
+    top: 100%;
+    background-color: lightblue;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+header img {
+    float: left; /* Float image to the left */
+
+}
+
+header h2 {
+    font-size: 200%; /* Font size twice the size of normal */
+    margin: 0 0 0 3.5em;
+}
+
+header h3 {
+    font-size: 125%; /* Font size 25% larger than normal */
+    margin: 0 0 0 9em
+}
+/*Main */
+
+nav a, main  a:link {
+    color: #9b59b6;
+}
+
+nav a, main a:visited {
+    color: #12395b;
+}
+
+nav a, main a:hover,
+nav a, main a:focus{
+    color: #2880b9;
+}
+main::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+main {
+    background-color: white;
+    border-top: 2px solid black;
+}
+
+/* Navigation menu styles */
+nav {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    width: calc(100% / 6); /* Adjust based on the number of items */
+    position: relative;
+    box-sizing: border-box;
+    background-color: lightcoral;
+}
+
+nav ul li a {
+    display: block;
+    background-color: lightcoral;
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 15px; /* Apply padding to the <a> to increase clickable area */
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+nav ul li:hover > nav a, nav ul li a:hover {
+    background-color: #ffcccb;
+    color: #2880b9;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li ul li {
+    float: none;
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 10px; /* Adjust if necessary */
+    background-color: lightcoral; /* Differentiate submenu items */
+}
+
+nav ul li ul li a:hover {
+    background-color: #ffcccb;
+    color: #2880b9;
+}
+
+
+/* Sidebar styles */
+main aside {
+
+    width: 160px; /* Adjust the width as needed */
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+
+}
+
+main aside ul{
+    line-height: 150%;
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+main aside a{
+    text-decoration: none;
+    color: inherit;
+}
+
+main aside  ul li a {
+    background-color: lightcoral;
+    padding: 10px 15px;
+    display: block;
+}
+
+
+main aside li:hover{
+    background-color: #ffcccb;
+    color: #2880b9;
+}
+main aside li{
+    border: 2px solid black;
+    margin: 0 0 10px 10px
+}
+main aside a:hover, main aside a:focus {
+    background-color: #ffcccb; /* Lighter color on hover */
+    color: #2880b9; /* Text color change on hover */
+}
+
+
+/* Main section styles */
+main section h1,
+main section h2,
+main section h3,
+main section p{
+    margin: 0 0 .5em 0;
+}
+main section{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 580px;
+    float: right;
+
+}
+
+main section h1 {
+    font-size: 150%; /* Font size 50% bigger than normal */
+
+
+}
+
+main section h1::first-letter {
+    font-size: 200%; /* First letter twice the size of normal */
+
+}
+
+main section h2 {
+    font-size: 125%; /* Font size 25% larger than normal */
+
+}
+
+main section h3 {
+    font-size: 110%; /* Font size 10% larger than normal */
+
+}
+
+main section p img{
+    width: 10em;
+    height: auto;
+
+}
+
+
+/* Style for footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 90%; /* 10% smaller than normal */
+    border-top:  2px solid black;
+    background-image: linear-gradient(45deg, black, salmon 75%, white);
+}
+
+footer > p{
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+#date {
+    flex: 0;
+    text-align: right;
+    white-space: nowrap;
+}
+
+
+
+
+ 
+
